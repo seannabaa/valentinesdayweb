@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <!-- Background (independent from particles) -->
+    <div id="page-background" class="page-background" aria-hidden="true"></div>
+
+    <!-- Heart particles -->
+    <div id="heart-particles" class="heart-particles" aria-hidden="true"></div>
+
+    <!-- Left side of website: transitioning placeholders -->
+    <div id="valentine-image-left" class="valentine-website-side valentine-website-side-left valentine-image-transition">
+        <div class="valentine-image-slide active">placeholder1</div>
+        <div class="valentine-image-slide">placeholder2</div>
+    </div>
+
+    <!-- Right side of website: transitioning placeholders -->
+    <div id="valentine-image-right" class="valentine-website-side valentine-website-side-right valentine-image-transition">
+        <div class="valentine-image-slide active">placeholder5</div>
+        <div class="valentine-image-slide">placeholder6</div>
+    </div>
+
+    <section id="hero" class="relative min-h-screen flex items-center justify-center hero-section p-4">
+        <div class="relative z-10 w-full max-w-md" data-aos="fade-up">
+            <div class="valentine-box bg-white rounded-2xl shadow-xl">
+                <!-- Single static image in the middle of the card -->
+                <div class="valentine-image-center">
+                    <span class="valentine-image-static-label">image</span>
+                </div>
+                <div class="p-6 valentine-buttons-wrap">
+                    <h2 class="valentine-header text-xl font-semibold text-center text-gray-800 mb-2">
+                        Will you be my Valentine?
+                    </h2>
+                    <p id="valentine-no-message" class="valentine-no-message text-center text-gray-500 text-sm mb-4 min-h-[1.5rem]" aria-live="polite"></p>
+                    <div class="valentine-buttons">
+                        <a href="valentinesyes.html" id="btn-yes" class="choice-button choice-button-yes">Yes</a>
+                        <button type="button" id="btn-no" class="choice-button choice-button-no">No</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="scriptvalentine.js"></script>
+    <script src="heartsvalentine.js"></script>
+</body>
+</html>

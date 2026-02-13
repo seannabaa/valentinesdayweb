@@ -6,7 +6,7 @@
     <title>Happy Valentine's Day!</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,21 +21,22 @@
 
     <!-- Left side of website: transitioning placeholders -->
     <div id="valentine-image-left" class="valentine-website-side valentine-website-side-left valentine-image-transition">
-        <div class="valentine-image-slide active">placeholder1</div>
-        <div class="valentine-image-slide">placeholder2</div>
+        <div class="valentine-image-slide active"><img src="../static/picture.jpg" width="150" height="150" ></div>
+        <div class="valentine-image-slide"><img src="../static/cathug.gif" width="150" height="150" ></div></div>
     </div>
 
     <!-- Right side of website: transitioning placeholders -->
-    <div id="valentine-image-right" class="valentine-website-side valentine-website-side-right valentine-image-transition">
-         <a href="valentine.html" class="image-button justify-center flex"><img src="static/cat.png" width="150" height="150"></a>
-        <div class="valentine-image-slide">placeholder6</div>
+    <div id="valentine-image-right" class="valentine-website-side valentine-website-side-right valentine-image-transition flex items-center justify-center ">
+        <div class="valentine-image-slide active"><img src="../static/catbox.gif" width="300" height="300" ></div>
+        <div class="valentine-image-slide"><img src="../static/picture2.jpg" width="750" height="450" ></div></div>
+    </div></div>
     </div>
 
     <section id="hero" class="relative min-h-screen flex items-center justify-center hero-section p-4">
         <div class="relative z-10 w-full max-w-md" data-aos="fade-up">
             <div class="valentine-box bg-white rounded-2xl shadow-x5">
                 <div class="valentine-image-center">
-                     <img src="static/tenor.gif" width="200" height="200">
+                     <img src="../static/tenor.gif" width="200" height="200">
                 </div>
                 <div class="p-6 valentine-buttons-wrap">
                     <h2 class="valentine-header text-xl font-semibold text-center text-gray-800 mb-2">
@@ -43,7 +44,7 @@
                     </h2>
                     <p id="valentine-no-message" class="valentine-no-message text-center text-gray-500 text-sm mb-4 min-h-[1.5rem]" aria-live="polite"></p>
                     <div class="valentine-buttons">
-                        <a href="valentinesyes.html" id="btn-yes" class="choice-button choice-button-yes">Yes</a>
+                        <a href="../valentineyes/valentinesyes.html" id="btn-yes" class="choice-button choice-button-yes">Yes</a>
                         <button type="button" id="btn-no" class="choice-button choice-button-no">No</button>
                     </div>
                 </div>
